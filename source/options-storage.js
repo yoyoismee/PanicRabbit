@@ -2,10 +2,10 @@ import OptionsSync from 'webext-options-sync';
 
 export default new OptionsSync({
 	defaults: {
-		colorRed: 244,
-		colorGreen: 67,
-		colorBlue: 54,
-		text: 'Set a text!',
+		Keyword: "nope",
+		Scam: "nope",
+		Reported: "nope",
+		KindaLookAlike: "nope",
 	},
 	migrations: [
 		OptionsSync.migrations.removeUnused,

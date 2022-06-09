@@ -1,8 +1,8 @@
 {
-	"name": "Awesome Extension",
+	"name": "Panic Rabbit",
 	"version": "0.0.0",
-	"description": "An awesome new browser extension",
-	"homepage_url": "https://github.com/fregante/browser-extension-template",
+	"description": "unlike brave Ape and Fox(metamask) this Panic Rabbit will alert you on random stuff",
+	"homepage_url": "https://github.com/yoyoismee/PanicRabbit",
 	"manifest_version": 3,
 	"minimum_chrome_version": "100",
 	"browser_specific_settings": {
@@ -18,11 +18,11 @@
 		"storage"
 	],
 	"host_permissions": [
-		"https://github.com/*"
+		"<all_urls>"
 	],
 	"content_scripts": [
 		{
-			"matches": [ "https://github.com/fregante/browser-extension-template/*" ],
+			"matches": ["<all_urls>"],
 			"js": [ "content.js" ],
 			"css": [ "content.css" ],
 			"run_at": "document_end"

@@ -3,34 +3,15 @@
 <title>Options</title>
 
 <form id="options-form" class="detail-view-container">
-	<h3>Color Picker</h3>
-	<div class="color-picker">
-		<div class="color-inputs">
-			<label class="color-input">
-				<span>R</span>
-				<input type="range" min="0" max="255" name="colorRed">
-				<input type="number" name="colorRed" min="0" max="255">
-			</label>
-			<label class="color-input">
-				<span>G</span>
-				<input type="range" min="0" max="255" name="colorGreen">
-				<input type="number" name="colorGreen" min="0" max="255">
-			</label>
-			<label class="color-input">
-				<span>B</span>
-				<input type="range" min="0" max="255" name="colorBlue">
-				<input type="number" name="colorBlue" min="0" max="255">
-			</label>
-		</div>
-		<div class="color-output"></div>
-	</div>
 	<h3>Notice Content</h3>
-	<div class="text-inputs">
-		<label class="text-input">
-			<span>Text</span>
-			<input type="text" name="text">
-		</label>
-	</div>
+	<input type="checkbox" id="Keyword" name="Keyword" value="Panik">
+	<label for="Keyword"> Panik on Keyword</label><br>
+	<input type="checkbox" id="Scam" name="Scam" value="Panik">
+	<label for="Scam"> Panik on Scam</label><br>	
+	<input type="checkbox" id="Reported" name="Reported" value="Panik">
+	<label for="Reported"> Panik on Reported site</label><br>
+	<input type="checkbox" id="KindaLookAlike" name="KindaLookAlike" value="Panik">
+	<label for="KindaLookAlike"> Panik on Kinda look alike</label><br>
 </form>
 
 <script src="options.js" type="module"></script>
