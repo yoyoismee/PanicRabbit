@@ -1,4 +1,6 @@
-# browser-extension-template
+# Panic Rabbit
+
+# Readme below are from browser-extension-template
 
 [link-webext-polyfill]: https://github.com/mozilla/webextension-polyfill
 [link-rgh]: https://github.com/sindresorhus/refined-github
