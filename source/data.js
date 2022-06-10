@@ -1,8 +1,9 @@
-export default
-{
-  // example data. 
-  "known_site": ["github.com","binance.com"],
-  "scam_site":["facebook.com"], 
-  "reported_site":["twitter.com"],
-  "high_risk_keyword":["seed phrase"],
-}
+const data = {
+	knownSite: ['github.com', 'binance.com'],
+	scamSite: ['facebook.com'],
+	reportedSite: ['twitter.com'],
+	highRiskKeyword: ['seed phrase'],
+};
+
+export default data;
+
