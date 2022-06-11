@@ -3,7 +3,7 @@ import OptionsSync from 'webext-options-sync';
 export default new OptionsSync({
 	defaults: {
 		Keyword: 'nope',
-		Scam: 'nope',
+		highRiskSite: 'nope',
 		Reported: 'nope',
 		KindaLookAlike: 'nope',
 	},
