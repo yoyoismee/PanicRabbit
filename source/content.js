@@ -56,6 +56,8 @@ async function init() {
 	let temporary = 999;
 	let minDistance = 999;
 	let similarSite = '';
+	let foundRoot = false;
+	let foundTLD = false;
 	if (options.KindaLookAlike === 'Panik') {
 		for (let i = 0; i < data.knownSite.length; i++) {
 			temporary = levenshtein(x, data.knownSite[i], insert, remove, update);
@@ -63,9 +65,19 @@ async function init() {
 				minDistance = temporary.distance;
 				similarSite = data.knownSite[i];
 			}
+			if (x.split(".")[0] == data.knownSite[i].split(".")[0]) {
+				foundRoot = true
+				if (x.split(".")[1] == data.knownSite[i].split(".")[1]) {
+					foundTLD = true
+				}
+			}
 		}
 
-		if (minDistance > 0 && minDistance <= 3) {
+		if (minDistance > 0 && minDistance <= 2) {
+			alertImg = panik
+			msg = 'This sound like another famous place!'
+		}
+		if (foundRoot && !foundTLD) {
 			alertImg = panik
 			msg = 'This sound like another famous place!'
 		}
