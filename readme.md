@@ -1,5 +1,5 @@
 # Panic Rabbit
-
+![](./source/panikrabbit.png)
 # Readme below are from browser-extension-template
 
 [link-webext-polyfill]: https://github.com/mozilla/webextension-polyfill
